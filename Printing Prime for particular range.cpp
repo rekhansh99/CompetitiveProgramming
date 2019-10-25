@@ -13,8 +13,8 @@ int main(){
 	}
 	for(int i = left; i <= right; i++){
 		int j = 0;
-		int l = sqrt(i);
-		for(j=2; j<=l ; j++){
+		
+		for(j=2; j<=sqrt(i) ; j++){
 			if(i%j == 0)
 				break;
 		}
