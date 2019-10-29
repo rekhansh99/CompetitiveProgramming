@@ -8,11 +8,12 @@ int main(){
 	if(left < 2)
 		left  = 2;
 	if(right < left || right < 2){
-		cout << "xxxxxxx  ====>>>Wrong Input<<<====  xxxxxx\nExiting.....";
+		cout << "Invalid Input..!";
 		exit(0);
 	}
 	for(int i = left; i <= right; i++){
 		int j = 0;
+		
 		for(j=2; j<=sqrt(i) ; j++){
 			if(i%j == 0)
 				break;
