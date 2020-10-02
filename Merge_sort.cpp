@@ -1,24 +1,29 @@
 #include<stdio.h>
-void merge(int arr[], int start, int mid, int end){
+void merge(int arr[], int start, int mid, int end)
+{
 	int len = end -start +1;
 	int temp[len];
 	int i = start;
 	int j = mid+1;
 	int k = 0;
-	while(i <= mid && j<= end){
+	while(i <= mid && j<= end)
+	{
 		if(arr[i] <= arr[j])
 			temp[k++] = arr[i++];
 		else
 			temp[k++] = arr[j++];
 	}
-	while(i <= mid){
+	while(i <= mid)
+	{
 		temp[k++] = arr[i++];
 	}
-	while(j <= end){
+	while(j <= end)
+	{
 		temp[k++] = arr[j++];
 	}
 	k =0;
-	for(int i=start; i<=end; i++){
+	for(int i=start; i<=end; i++)
+	{
 		arr[i] = temp[k++];
 	}
 }

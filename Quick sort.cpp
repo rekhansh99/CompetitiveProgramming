@@ -6,7 +6,7 @@ void swap(int *x, int *y)
 	*x = *y;
 	*y = temp;
 }
-void qsort(int arr[], int start, int end)
+qsort(int arr[], int start, int end)
 {
 	if(start < end)
 	{
