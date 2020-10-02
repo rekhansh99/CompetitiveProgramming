@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
+using namespace std;
 
 void swap(int *a, int *b)
 {
@@ -49,12 +50,13 @@ void heapSort(int *arr, int n)
 int main()
 {
     int n;
-    scanf("%d", &n);
+    cin >> n;
     int i, arr[n + 1];
     for(i = 1; i <= n; i++)
-        scanf("%d", &arr[i]);
+        cin >> arr[i];
 
     heapSort(arr, n);
     for(i = 1; i < n + 1; i++)
-        printf("%d ",arr[i]);
+        cout << arr[i] << " ";
+    cout << endl;
 }
